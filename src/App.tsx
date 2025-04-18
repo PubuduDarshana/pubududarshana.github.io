@@ -208,7 +208,7 @@ const App: React.FC = () => {
         }}
       >
         <div className="container mx-auto px-4 max-w-5xl">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-0">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-16 lg:gap-0">
             {/* Left Column - Text Content */}
             <div className="flex-1 text-center lg:text-left animate-fade-in">
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-bold mb-6">
@@ -232,7 +232,7 @@ const App: React.FC = () => {
                 <a
                   href={cvFile}
                   download
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-primary hover:bg-primary-dark text-text-dark font-medium rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-primary hover:bg-primary-dark text-text-dark font-medium rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 max-w-[240px] mx-auto sm:mx-0 w-full sm:w-auto"
                 >
                   <Download size={20} />
                   Download CV
@@ -1051,7 +1051,7 @@ const App: React.FC = () => {
             Skills
           </motion.h2>
           <motion.div 
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 [&>*:last-child]:col-span-2 [&>*:last-child]:max-w-md [&>*:last-child]:mx-auto"
+            className="grid grid-cols-1 md:grid-cols-2 gap-8 [&>*:last-child]:md:col-span-2 [&>*:last-child]:max-w-md [&>*:last-child]:mx-auto"
             variants={{
               hidden: { opacity: 0 },
               show: {
