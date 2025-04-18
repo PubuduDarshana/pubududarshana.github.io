@@ -232,7 +232,7 @@ const App: React.FC = () => {
                 <a
                   href={cvFile}
                   download
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-primary hover:bg-primary-dark text-text-dark font-medium rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 max-w-[240px] mx-auto sm:mx-0 w-full sm:w-auto"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary hover:bg-primary-dark text-text-dark font-medium rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 max-w-[240px] mx-auto sm:mx-0 w-full sm:w-auto"
                 >
                   <Download size={20} />
                   Download CV
@@ -947,7 +947,6 @@ const App: React.FC = () => {
                 }}
                 whileHover={{
                   scale: 1.05,
-                  rotateY: 5,
                   transition: {
                     duration: 0.3
                   }
@@ -994,8 +993,8 @@ const App: React.FC = () => {
                     </motion.div>
                     <motion.div 
                       className="w-24 h-24 sm:w-32 sm:h-32 flex-shrink-0"
-                      initial={{ opacity: 0, scale: 0.8, rotate: -10 }}
-                      whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
                       transition={{ 
                         delay: 0.4,
                         type: "spring",
@@ -1003,7 +1002,6 @@ const App: React.FC = () => {
                       }}
                       whileHover={{ 
                         scale: 1.1,
-                        rotate: 5,
                         transition: { duration: 0.2 }
                       }}
                       viewport={{ once: true }}
