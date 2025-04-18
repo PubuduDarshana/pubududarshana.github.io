@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/Portfolio/', // Add this line - should match your repository name
+  base: '/pubududarshana.github.io', // Changed to lowercase to match repository name
   plugins: [react()],
   server: {
     port: 5173,
